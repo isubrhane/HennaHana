@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
-// import { Navbar, NavbarBrand } from 'reactstrap';
-// import Directory from './components/DirectoryComponent';
+import React from 'react';
+import Home from './components/HomeComponent';
+import About from './components/AboutComponent';
 import './App.css';
-import Home from './pages/home';
+
 
 function App() {
-   
-        return (
-            <Home/>
-        );
-    }
-
+  return (
+    <div className="App">
+      <Home />
+      <About />
+    </div>
+  );
+}
 
 export default App;
