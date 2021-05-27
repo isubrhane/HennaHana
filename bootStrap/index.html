@@ -39,8 +39,8 @@
                                             About Us</a></li>
 
                                 </ul>
-                                <span class="navbar-text ">
-                                    <a role="button" id="loginButton">
+                                <span class="navbar-text ">                                  
+                                    <a role="button" data-toggle="modal" data-target="#loginModal">
                                         <i class="fa fa-sign-in"> Login</i>
                                     </a>
                                 </span>
@@ -48,9 +48,80 @@
                         </div>
                     </div>
                 </nav>
+                <div id="loginModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Login</h3>
+                                <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="form-group row">
+                                                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                                                <div class="col-5 col-md-3">
+                                                    <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label for="date" class=" col-sm-6 col-form-label">Service Date</label>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="date" name="date" id="date"
+                                                        placeholder="date">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label for="loginEmail" class="sr-only">Email address</label>
+                                                <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                                    placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label for="loginPassword" class="sr-only">Password</label>
+                                                <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label"> Remember me</label>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                        <div class="form-row">
+                                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </header>
+
+   
 
 
     <div class="container">
@@ -209,37 +280,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container">
-        <div class="row row-content">
-            <div class="col-12 col-sm-2">
-                <div class="card bg-info">
-                    <img style="height: 7rem;" src="img/google map image.png" class="card-img-top" alt="">
-                    <div class="card-body align-self-center">
-                        Our Location
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-4 offset-2 align-self-center">
-                <a href="menu.html">
-                    <button type="button" role="button" class="btn btn-info text-white btn-lg">Order Now</button>
-                </a>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card">
-                    <div class="card-body bg-info">
-                        <h2 class="card-title">Open Hours</h2>
-                        <p>Monday - Friday 9:00 Am - 12:00 Am</p>
-                        <p>Saturday - Sunday 10:00 Am - 1:00 Am</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div> -->
-
-
-
+  
     <footer class="site-footer">
         <div class="container">
             <div class="row">
